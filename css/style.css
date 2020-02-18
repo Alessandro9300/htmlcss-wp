@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(https://organicthemes.com/demo/natural-lite/wp-content/themes/natural-lite/images/default-pattern.png);
+}
+
+.container{
+  width: 1000px;
+  margin: auto;
+
+}
+
+main::after{
+content: "";
+display: table;
+clear: both;
+
+}
+
+
+/* header */
+.titolo{
+/* DEBUG:  */
+height: 180px;
+background-color:white;
+border: solid;
+/* DEBUG:  */
+}
+
+.barranav{
+/* DEBUG:  */
+height: 40px;
+border: solid;
+background-color: white;
+/* DEBUG:  */
+margin-bottom: 2%;
+
+}
+
+/* fine header */
+
+
+
+
+
+
+
+/* aside sinistro */
+.sx{
+float: left;
+width: 21%;
+margin-right: 2%
+}
+
+.pages{
+/* DEBUG:  */
+height: 300px;
+border: solid white;
+/* DEBUG:  */
+}
+
+.archives{
+  /* DEBUG:  */
+  height: 150px;
+  border: solid white;
+  /* DEBUG:  */
+
+}
+
+.meta{
+  /* DEBUG:  */
+  height: 225px;
+  border: solid white;
+  /* DEBUG:  */
+}
+
+/* fine aside sinistro */
+
+
+
+
+
+/* corpo */
+.centrale{
+/* DEBUG:  */
+background-color: white;
+/* DEBUG:  */
+width: 50%;
+float: left;
+margin-right:2%
+}
+
+.articolo{
+/* DEBUG:  */
+border: solid black;
+/* DEBUG:  */
+height: 600px;
+}
+/* fine corpo */
+
+
+
+
+/* aside destro */
+.dx{
+
+width: 25%;
+float: left;
+}
+
+.search{
+/* DEBUG:  */
+border: solid white;
+height: 75px;
+/* DEBUG:  */
+
+
+
+}
+.tag{
+/* DEBUG:  */
+border: solid white;
+height: 150px;
+/* DEBUG:  */
+
+
+}
+/* fine aside destro */
+
+
+
+
+
+/* footer */
+.link-utili{
+  /* DEBUG:  */
+  height: 270px;
+  background-color: white;
+  border: solid;
+  /* DEBUG:  */
+  margin-top:2%;
+
+}
+
+.piè-pagina{
+  /* DEBUG:  */
+  height: 120px;
+  background-color: white;
+  border: solid;
+  /* DEBUG:  */
+
+}
+
+/* fine footer */
+
+
+/* generale */
+
+.finestra{
+  margin-bottom: 6%;
+  padding: 20px;
+}
