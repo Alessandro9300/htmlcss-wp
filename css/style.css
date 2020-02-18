@@ -1,3 +1,7 @@
+
+/* MANCA IL FOOTER */
+
+
 *{
   margin: 0;
   padding: 0;
@@ -6,11 +10,17 @@
 
 body{
   background-image: url(https://organicthemes.com/demo/natural-lite/wp-content/themes/natural-lite/images/default-pattern.png);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #99cc33;
 }
 
 .container{
-  width: 1000px;
-  margin: auto;
+  width: 1280PX;
+  margin: 2% auto;
 
 }
 
@@ -21,26 +31,97 @@ clear: both;
 
 }
 
+.finestra{
+  margin-bottom: 6%;
+  padding: 20px;
+  background-color: white;
+  font-weight: 1;
+  line-height: 38px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.barranav::after{
+content: "";
+display: table;
+clear: both;
+
+}
 
 /* header */
 .titolo{
-/* DEBUG:  */
-height: 180px;
-background-color:white;
-border: solid;
-/* DEBUG:  */
-}
 
+height: 200px;
+background-image: url(https://organicthemes.com/demo/natural-lite/wp-content/themes/natural-lite/images/default-header.jpg);
+background-size: cover;
+border: solid 10px white;
+color: white;
+position: relative;
+
+
+}
+h1{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: 600;
+  font-size: 3em;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px grey;
+}
+h2{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: 1;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px grey;
+  font-size: 1.2em;
+
+
+}
 .barranav{
-/* DEBUG:  */
-height: 40px;
-border: solid;
-background-color: white;
-/* DEBUG:  */
+background-color: #504741;
 margin-bottom: 2%;
 
 }
 
+.navlist{
+width: 40%;
+margin: auto;
+
+}
+
+.linklist{
+  float: left;
+  display: inline-block;
+  width: 18%;
+  line-height: 40px;
+  margin:0;
+  border-left: 1px solid rgba(0, 0, 0, .4);
+  text-align: center;
+}
+
+.barranav a{
+  color: rgba(255, 255, 255, .7);
+  text-shadow: 0.5px 0.5px grey;
+  font-size: 11px;
+  font-weight: light;
+  display: block;
+
+
+}
+
+.barranav li:first-child{
+  border: none;
+}
+
+.barranav li:hover{
+  background-color: rgba(0, 0, 0, .4);
+  cursor: pointer;
+}
 /* fine header */
 
 
@@ -56,26 +137,36 @@ width: 21%;
 margin-right: 2%
 }
 
-.pages{
-/* DEBUG:  */
-height: 300px;
-border: solid white;
-/* DEBUG:  */
+.sx .finestra{
+
+
+
+}
+
+.sx p{
+  font-size: 20px;
+}
+
+
+.sx li{
+display: block;
+text-indent: 10px;
+}
+.sx li:hover{
+  /* border-top: solid 2px grey; */
+  box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
+  }
+
+.sx a{
+  display:block;
 }
 
 .archives{
-  /* DEBUG:  */
-  height: 150px;
-  border: solid white;
-  /* DEBUG:  */
 
 }
 
 .meta{
-  /* DEBUG:  */
-  height: 225px;
-  border: solid white;
-  /* DEBUG:  */
+
 }
 
 /* fine aside sinistro */
@@ -86,20 +177,54 @@ border: solid white;
 
 /* corpo */
 .centrale{
-/* DEBUG:  */
 background-color: white;
-/* DEBUG:  */
 width: 50%;
 float: left;
 margin-right:2%
 }
 
 .articolo{
-/* DEBUG:  */
-border: solid black;
-/* DEBUG:  */
-height: 600px;
+
+
 }
+
+.arthead{
+  padding: 35px 25px;
+  line-height: 1.9;
+}
+h3 a{
+  color: #504741;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.23);
+  font-size: 35px;
+  line-height: 1.5px;
+}
+
+h3 a:hover{
+  color: #99cc33;
+}
+
+.arthead p{
+  color: #999999;
+  font-weight: 0.1;
+}
+
+
+
+
+#imgarticolo{
+  max-width: 100%;
+
+}
+
+#footart{
+  text-indent: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+
+}
+
+
 /* fine corpo */
 
 
@@ -107,28 +232,59 @@ height: 600px;
 
 /* aside destro */
 .dx{
-
 width: 25%;
 float: left;
 }
 
-.search{
-/* DEBUG:  */
-border: solid white;
-height: 75px;
-/* DEBUG:  */
+.casella{
+height:100px;
+padding: 0;
+position: relative;
 
+}
+
+.centro{
+  width: 280px;
+  margin: auto;
+  position: relative;
+  top: 25%;
+
+  /* transform: translate(-50%, -50%) */
 
 
 }
+
+#search{
+  height: 50px;
+  border-radius: 5%;
+  padding: 0 5px;
+  width: 200px;
+
+}
+button{
+  background-color: #706760;
+  color: white;
+  width: 70px;
+  height: 50px;
+  border-radius: 5%;
+
+}
+
+button:hover{
+  cursor: pointer;
+}
+
 .tag{
-/* DEBUG:  */
-border: solid white;
-height: 150px;
-/* DEBUG:  */
-
+font-size: 12px;
+line-height: 1.8;
 
 }
+.tag p:first-child{
+  font-size: 20px;
+  line-height: 2;
+
+}
+
 /* fine aside destro */
 
 
@@ -159,8 +315,3 @@ height: 150px;
 
 
 /* generale */
-
-.finestra{
-  margin-bottom: 6%;
-  padding: 20px;
-}
